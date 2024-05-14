@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "subnet": "",
+        "location": "Santo Domingo, Dominican Republic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.9422, 18.4861]  
+      }
+    }
+  ]
+}
