@@ -221,6 +221,47 @@ ul.nostyle i {
   height: auto;
   padding: 22px 15px 15px;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right; /* Aligns the content of the navbar to the right */
+}
+
+.navbar-collapse ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-collapse ul li {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-collapse {
+      width: 100%;
+  }
+
+  .navbar-collapse ul li {
+      display: block;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
     background: rgba(255, 255, 255, 1);
