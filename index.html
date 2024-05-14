@@ -35,7 +35,7 @@
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
                 </div>
 				
-                <div class="collapse navbar-collapse navbar-right">
+                <div class="navbar-collapse navbar-right collapse" aria-expanded="false" style="height: 1px;">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">Inicio</a></li>
                         <li class="scroll"><a href="#services">Servicios</a></li>
@@ -183,7 +183,11 @@ $("#owl-example").owlCarousel({
         itemsTabletSmall: false,
         itemsMobile : [479,4]*/
 })
-
+$(document).ready(function() {
+    $("#menu-toggle").click(function() {
+        $("#main-menu-collapse").slideToggle();
+    });
+});
     </script>
 </body>
 </html> 

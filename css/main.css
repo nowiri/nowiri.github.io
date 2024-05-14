@@ -123,6 +123,21 @@ hr {
   border-radius: 20px;
   background: #ff641b;
 }
+
+/* Add your custom styles here */
+
+/* Show the collapsed menu by default */
+.navbar-collapse {
+  display: block;
+}
+
+/* Hide the collapsed menu on larger screens */
+@media (min-width: 768px) {
+  .navbar-collapse {
+      display: none;
+  }
+}
+
 .btn {
   border-width: 0;
   border-bottom-width: 3px;
